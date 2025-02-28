@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diet Recommendation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Your Details</h2>
+        <form action="/" method="post">
+            <label>Age:</label>
+            <input type="number" name="Age" required>
+
+            <label>Weight (kg):</label>
+            <input type="number" name="Weight_kg" required>
+
+            <label>Height (cm):</label>
+            <input type="number" name="Height_cm" required>
+
+            <label>Gender:</label>
+            <select name="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <button type="submit">Get Diet Recommendation</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balanced Diet</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Styling for diet plan sections */
+        .diet-section {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: black; /* Yellow color */
+            text-transform: uppercase;
+            font-size: 22px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 18px;
+            color: #ffffff;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin: 5px 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        li:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+
+        .highlight {
+            font-weight: bold;
+            color:black;
+        }
+
+        /* Button Styling */
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: #ff7043;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .back-btn:hover {
+            background: #ff5722;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="font-size: 50px;color: #000;">🥗 Balanced Diet Plan</h2>
+        <p style="font-size: 25px; color:black;">A balanced diet includes a variety of nutrients to maintain overall health.</p>
+
+        <div class="diet-section">
+            <h3>✅ Recommended Foods</h3>
+            <ul>
+                <li><span class="highlight">✔ Lean Proteins:</span> Chicken, fish, eggs, tofu</li>
+                <li><span class="highlight">✔ Whole Grains:</span> Brown rice, quinoa, whole wheat bread</li>
+                <li><span class="highlight">✔ Vegetables:</span> Spinach, carrots, bell peppers</li>
+                <li><span class="highlight">✔ Fruits:</span> Apples, bananas, oranges</li>
+                <li><span class="highlight">✔ Dairy & Healthy Fats:</span> Yogurt, nuts, olive oil</li>
+                <li><span class="highlight">✔ Hydration:</span> Water, herbal teas</li>
+            </ul>
+        </div>
+
+        <div class="diet-section">
+            <h3>❌ Foods to Avoid</h3>
+            <ul>
+                <li><span class="highlight">✖ Excess Sugar:</span> Sodas, candies, baked goods</li>
+                <li><span class="highlight">✖ Processed Foods:</span> Chips, frozen meals</li>
+                <li><span class="highlight">✖ Fried & Fatty Foods:</span> Fast food, deep-fried snacks</li>
+            </ul>
+        </div>
+
+        <div class="diet-section">
+            <h3>🍽 Sample Meal Plan</h3>
+            <ul>
+                <li><b style="color: #000;">🥣 Breakfast:</b> Whole wheat toast with peanut butter and a banana</li>
+                <li><b style="color: #000;">🥗 Lunch:</b> Brown rice with grilled chicken and vegetables</li>
+                <li><b style="color: #000;">🐟 Dinner:</b> Baked fish with quinoa and steamed broccoli</li>
+                <li><b style="color: #000;">🍎 Snacks:</b> Nuts, yogurt, and fresh fruit</li>
+            </ul>
+        </div>
+
+        <br>
+        <a href="/" class="back-btn">🔙 Go Back</a>
+    </div>
+</body>
+</html>
